@@ -1,8 +1,9 @@
-package javaCollections.Arrays;
+package javaCollections.Generic;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
-public class arraysDemo {
+public class arraySortComparatorDemo {
 
     public static void main(String args[]){
         //Concepts learnt
@@ -42,6 +43,13 @@ public class arraysDemo {
         }
 
         //Sort using compartor
+        String strArr1[] = {"Haritha", "Vaishnavi","Vishnu", "Nikil", "Anju", "Gokul", "Praneet"};
+        Comparator comp = new comparatorDemo();
+        Arrays.sort(strArr1,comp);
+        System.out.println("+++After sorting array using comparator+++");
+        for (String i:strArr1) {
+            System.out.println(i);
+        }
 
 
     }
