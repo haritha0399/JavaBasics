@@ -1,9 +1,7 @@
 package javaCollections.ListInterface.ArrayListDemo;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class arrayListDemo {
 
@@ -87,8 +85,30 @@ public class arrayListDemo {
         originalList.clear();
         System.out.println("Removes all the values -->"+originalList.isEmpty());
 
+        //16. Convert arrayList to array
+        ArrayList a1 = new ArrayList();
+        a1.add(1);
+        a1.add(2);
+        System.out.println("ArrayList-->"+a1);
+        a1.toArray();
+        System.out.println("ArrayList to array-->"+a1);
 
+        //17. Iterator
+        ArrayList<String> list = new ArrayList<>();
 
+        list.add("Geeks");
+        list.add("for");
+        list.add("Geeks");
+        list.add("is");
+        list.add("a");
+        list.add("CS");
+        list.add("Students");
+        list.add("Portal");
 
+        Iterator it = list.iterator();
+
+        while (it.hasNext()) {
+            System.out.print(it.next() + " ");
+        }
     }
 }
