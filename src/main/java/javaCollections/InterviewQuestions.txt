@@ -1,0 +1,27 @@
+1. get vs remove
+Both used to retrive the data/ elements form the arraylist. But get() returns the value whereas remove() retrives the value and delete the element from the arrayList.
+
+2. List vs Set
+- Set
+1. Do not contain duplicate values
+2. Unsorted
+
+- List
+1. Contain duplicate values
+2. Sorted
+
+3. ArrayList vs LinkedList
+-ArrayList
+1. Retrive elements is faster
+2. Add / remove elements is difficult due to shifting task
+
+-LinkedList
+1. Retrive elements is slower
+2. Add / remove elements is FASTER
+
+4. LinkedList specific methods
+1. addFirst , addLast
+2. getFirst, getLast
+3. pollFirst, pollLast
+4. offerFirst, offerLast, offer
+5. removeFirst, removeLast
