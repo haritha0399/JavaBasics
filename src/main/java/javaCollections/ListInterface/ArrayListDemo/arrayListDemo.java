@@ -16,6 +16,7 @@ public class arrayListDemo {
         arr1.add(2);
         arr1.add("Vaishnavi");
 
+        System.out.println(arr1);
         //3.Size of the arrayList
         System.out.println(arr1.size());
 

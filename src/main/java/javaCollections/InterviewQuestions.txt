@@ -25,3 +25,21 @@ Both used to retrive the data/ elements form the arraylist. But get() returns th
 3. pollFirst, pollLast
 4. offerFirst, offerLast, offer
 5. removeFirst, removeLast
+
+5. Cursors
+- Three custors --> Iterator, ListIterator, splitertor
+Iteraor - only forward traversal -- remove , hasNext() & next();
+ListIterator - bidirectonal  -- remove, hasNext(), next(), hasPrevious() , previous(), add, set.
+Spliterator - parallel iteration
+
+6. Auto Boxing
+- Converting primitive datatype variable to wrapper datatype
+Eg. int a = 10;
+Integer i = a;
+
+UnBoxing
+- Converting wrapper data type to primitive data type
+int a = i;
+
+7. HashSet vs LinkedHashSet
+--> HashSet does not maintain the intersion order vs linkedHashset maintains the insertion order.

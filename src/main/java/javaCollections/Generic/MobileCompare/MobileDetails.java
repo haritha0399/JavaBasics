@@ -1,12 +1,18 @@
 package javaCollections.Generic.MobileCompare;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 
 class MobileDetails{
     String model;
     int pixels;
     int price;
+
+    public String toString(){
+        return " "+this.price + " "+ this.model + " "+this.pixels;
+    }
     MobileDetails(String model, int pixels, int price ){
         this.model = model;
         this.pixels = pixels;
@@ -19,11 +25,23 @@ class MobileDetails{
         MobileDetails vivo = new MobileDetails("XYZ", 16, 18000);
         MobileDetails apple = new MobileDetails("PQR", 32, 98000);
 
-        MobileDetails[] mob = {samsung,vivo,apple};
+        ArrayList arr = new ArrayList();
+        arr.add(samsung);
+        arr.add(vivo);
+        arr.add(apple);
+
+        //normal sort
+       // Collections.sort(arr); -> objects cant be sorted so it shows classcastException
+        System.out.println(arr);
+
         Comparator comp = new comparatorDemo();
-        Arrays.sort(mob,comp);
-        for (MobileDetails m:mob) {
-            System.out.println(m);
-        }
+
+        //sort using comparator
+        Collections.sort(arr,comp);
+        System.out.println(arr);
+
+        //reverse
+        Collections.reverse(arr);
+        System.out.println(arr);
     }
 }
