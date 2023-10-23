@@ -43,3 +43,6 @@ int a = i;
 
 7. HashSet vs LinkedHashSet
 --> HashSet does not maintain the intersion order vs linkedHashset maintains the insertion order.
+
+8. Why heterogeneous is not allowed in treeset ?
+--> ClasscastException thrown
