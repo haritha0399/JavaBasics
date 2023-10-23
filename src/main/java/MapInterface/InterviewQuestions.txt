@@ -1,0 +1,12 @@
+1. map is not a collections interface
+
+2. Entry - key value pairs
+
+3. No duplicate KEY are allowed
+
+4. Duplicate values are allowed
+
+5. Collection view of maps
+- KeySet
+- values
+- EntrySet

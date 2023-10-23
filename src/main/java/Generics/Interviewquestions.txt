@@ -1,0 +1,3 @@
+Generis
+
+1. In array - type safety is taken care where as in collections no type safety. I.E it can be heterogeneous.
